@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { useEffect, useRef } from "react";
 import { assets, products } from "../../assets";
+import {ProductCard} from "../ProductCard/ProductCard";
 
 export default function ProductCarousel() {
   const prevRef = useRef(null);
@@ -35,38 +36,7 @@ export default function ProductCarousel() {
       >
         {products.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="flex flex-col bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow">
-              <div className="p-2">
-                <img
-                  src={item.img}
-                  alt="Product1"
-                  className="rounded-t-lg w-[214px] cursor-pointer"
-                />
-              </div>
-              <div className="flex flex-col gap-4 px-3 pb-5 pt-2">
-                <img src={assets.Badge} alt="Badge" className="w-[124px]" />
-                <h2
-                  className="font-semibold line-clamp-2"
-                  title="Lọc gió động cơ Air Filter – Chevrolet Colorado, Trailblazer (52046262)"
-                >
-                  {item.title}
-                </h2>
-                <div className="flex flex-col gap-2">
-                  <p className="text-[#B71D18] text-[20px] font-semibold">
-                    {item.price} <span className="underline">đ</span>
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <p className="text-[#919EAB] text-[14px] line-through">
-                      {item.oldPrice} <span className="underline">đ</span>
-                    </p>
-                    <p className="text-[#B71D18]">-10%</p>
-                  </div>
-                  <button className="rounded-sm bg-[#E6F1FF] px-3 py-3 w-full text-[#025FCA] font-semibold hover:bg-blue-200 transition-colors cursor-pointer">
-                    Mua ngay
-                  </button>
-                </div>
-              </div>
-            </div>
+            <ProductCard product={item} />
           </SwiperSlide>
         ))}
       </Swiper>

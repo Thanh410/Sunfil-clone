@@ -26,7 +26,7 @@ export const Footer = () => {
     });
   };
   return (
-    <div className="relative w-full bg-gradient-to-r from-[#F9FAFB] to-[#F3F4F6]">
+    <div className="relative w-full ">
       {/* Pattern nền */}
       <div
         className="absolute inset-0 opacity-35"
