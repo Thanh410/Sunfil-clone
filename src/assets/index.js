@@ -39,10 +39,10 @@ import Cabin from "./Filters/bo_loc_trong_cabin.svg";
 import Product1 from "./Products/Img_Product_M.1.svg";
 import Product2 from "./Products/Img_Product_M.2.svg";
 
-import Delivery from "./Icon/Delivery.svg";
-import Money from "./Icon/Money.svg";
-import Support from "./Icon/Support.svg";
-import Package from "./Icon/Package.svg";
+import Delivery from "./Icon/delivery.svg";
+import Money from "./Icon/money.svg";
+import Support from "./Icon/support.svg";
+import Package from "./Icon/package.svg";
 
 
 import ChevronRight from "./Line/Arrows/ArrowRightIcon.svg";
