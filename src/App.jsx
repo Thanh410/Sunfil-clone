@@ -1,21 +1,21 @@
 import React from "react";
-import { Header } from "./components/Header/Header";
-import { Footer } from "./components/Footer/Footer";
+import { Header } from "./components/Layout/Header/Header";
+import { Footer } from "./components/Layout/Footer/Footer";
 import { Banner } from "./components/Banner/Banner";
 import { Products } from "./components/Products/Products";
-import { FeatureList } from "./components/FeatureList/FeatureList";
+import { FeatureList } from "./components/Feature/FeatureList/FeatureList";
 import { Explorer } from "./components/Explorer/Explorer";
 
 const App = () => {
   return (
     <div>
       <Header />
-      <div className="app">
+      <main className="app">
         <Banner />
         <Products />
         <FeatureList />
         <Explorer />
-      </div>
+      </main>
       <Footer />
     </div>
   );

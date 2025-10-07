@@ -1,6 +1,6 @@
 import React from "react";
 import { assets } from "../../assets";
-import ProductCarousel from "../ProductCarousel/ProductCarousel";
+import ProductCarousel from "../Products/ProductCarousel/ProductCarousel";
 
 export const Banner = () => {
   return (

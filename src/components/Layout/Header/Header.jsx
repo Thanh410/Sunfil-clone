@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { assets, productsImg } from "../../assets";
-import { CategoryMenu } from "../CategoryMenu/CategoryMenu";
-import { motion, AnimatePresence } from "framer-motion";
+import { assets, productsImg } from "../../../assets";
+import { CategoryMenu } from "../../CategoryMenu/CategoryMenu";
+import { motion , AnimatePresence } from "framer-motion";
 
 export const Header = () => {
-  const [cart, setCart] = useState(false);
 
   return (
     <header className="flex flex-col gap-3 pb-4">
@@ -30,7 +29,7 @@ export const Header = () => {
    COMPONENT: Top Banner
 ================================= */
 const TopBanner = () => (
-  <div className="flex justify-between items-center p-2 bg-gradient-to-l from-[#0D57C6] via-[#37CFFF] to-[#0F5ED6] text-white text-sm">
+  <div className="flex justify-between items-center px-30 bg-gradient-to-l from-[#0D57C6] via-[#37CFFF] to-[#0F5ED6] text-white text-sm">
     <PromoMessage />
     <ContactSection />
   </div>
@@ -100,7 +99,7 @@ const SearchBar = () => (
       <button className="flex items-center justify-center bg-transparent mr-2 p-0 cursor-pointer">
         <img src={assets.Capture} alt="Capture" />
       </button>
-      <button className="flex items-center justify-center bg-[#0373F3] hover:bg-blue-600 transition-colors text-white rounded-full ml-2 px-6 py-3">
+      <button className="flex items-center justify-center bg-[#0373F3] cursor-pointer hover:bg-blue-600 transition-colors text-white rounded-full ml-2 px-6 py-3">
         <img src={assets.Search} alt="Search" />
       </button>
     </div>

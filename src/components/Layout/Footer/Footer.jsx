@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { assets } from "../../assets";
+import { assets } from "../../../assets";
 import { ArrowDown, ArrowDownIcon, ChevronDown } from "lucide-react";
 
 export const Footer = () => {
@@ -67,21 +67,31 @@ export const Footer = () => {
                 </span>
               </p>
             </div>
-            <img
-              src={assets.BoCongThuong}
-              alt="BoCongThuong"
-              className="w-[200px]"
-            />
+            <a href="#">
+              <img
+                src={assets.BoCongThuong}
+                alt="BoCongThuong"
+                className="w-[200px]"
+              />
+            </a>
           </div>
 
           {/* Cột 2 */}
           <div className="flex flex-col gap-8">
             <h2 className="font-bold uppercase mb-4">Sitemap</h2>
             <div className="flex flex-col gap-2 text-sm">
-              <p className="text-[#637381] cursor-pointer">About</p>
-              <p className="text-[#637381] cursor-pointer">Article</p>
-              <p className="text-[#637381] cursor-pointer">Cart</p>
-              <p className="text-[#637381] cursor-pointer">Contact</p>
+              <p className="text-[#637381] cursor-pointer">
+                <a href="#">About</a>{" "}
+              </p>
+              <p className="text-[#637381] cursor-pointer">
+                <a href="#">Article</a>{" "}
+              </p>
+              <p className="text-[#637381] cursor-pointer">
+                <a href="#">Cart</a> Cart
+              </p>
+              <p className="text-[#637381] cursor-pointer">
+                <a href="#">Contact</a>{" "}
+              </p>
             </div>
           </div>
 
@@ -91,11 +101,19 @@ export const Footer = () => {
             <div className="flex flex-col gap-2 text-sm">
               <div className="flex items-end gap-2">
                 <div className="border-b-2 border-[#1C252E] w-3"></div>
-                <p className="text-[#1C252E] font-medium">Privacy policy</p>
+                <p className="text-[#1C252E] font-medium ">
+                  <a href="#">Privacy policy</a>{" "}
+                </p>
               </div>
-              <p className="text-[#637381] cursor-pointer">Cookie policy</p>
-              <p className="text-[#637381] cursor-pointer">Delivery policy</p>
-              <p className="text-[#637381] cursor-pointer">FAQs</p>
+              <p className="text-[#637381] cursor-pointer">
+                <a href="#">Cookie policy</a>{" "}
+              </p>
+              <p className="text-[#637381] cursor-pointer">
+                <a href="#">Delivery policy</a>{" "}
+              </p>
+              <p className="text-[#637381] cursor-pointer">
+                <a href="#">FAQs</a>
+              </p>
             </div>
           </div>
 
@@ -128,7 +146,7 @@ export const Footer = () => {
         {showScroll && (
           <button
             onClick={scrollToTop}
-            className="fixed bottom-6 right-6 w-10 h-10 rounded-full flex items-center justify-center border border-[#919EAB33] shadow-md bg-white hover:bg-[#F4F6F8] transition-all duration-300 ease-in-out animate-fadeIn cursor-pointer"
+            className="fixed bottom-6 right-6 w-10 h-10 rounded-full  flex items-center justify-center border border-[#919EAB33] shadow-md bg-white hover:bg-[#F4F6F8] transition-all duration-300 ease-in-out animate-fadeIn cursor-pointer"
           >
             <img src={assets.ArrowDownIcon} alt="up" />
           </button>

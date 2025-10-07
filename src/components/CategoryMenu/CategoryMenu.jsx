@@ -5,13 +5,14 @@ import { categoryData } from "../../data/categoryData";
 export const CategoryMenu = ({ title = "Danh mục sản phẩm" }) => {
   const [activeCategory, setActiveCategory] = useState("Bộ Lọc Dầu");
   const activeData = categoryData[activeCategory];
-
-  const getCategoryIcon = (category) => {
-    if (category.includes("Dầu")) return filtersImg?.Dau;
-    if (category.includes("Không Khí")) return filtersImg?.KhongKhi;
-    if (category.includes("Nhiên Liệu")) return filtersImg?.NhienLieu;
-    return filtersImg?.Cabin;
+ const iconMap = {
+    "Bộ Lọc Dầu": filtersImg.Dau,
+    "Bộ Lọc Không Khí": filtersImg.KhongKhi,
+    "Bộ Lọc Nhiên Liệu": filtersImg.NhienLieu,
+    "Bộ Lọc Trong Cabin": filtersImg.Cabin,
   };
+ const getCategoryIcon = (category) =>
+    iconMap[category] || filtersImg.DefaultIcon || filtersImg.Cabin;
 
   return (
     <div className="relative inline-block text-left group">

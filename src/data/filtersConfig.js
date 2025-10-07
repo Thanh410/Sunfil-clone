@@ -5,6 +5,11 @@ export const tabs = [
   { id: "featured", label: "Nổi bật" },
 ];
 
+export const sortOptions = [
+  { label: "Giá: Thấp → Cao", value: "price_asc" },
+  { label: "Giá: Cao → Thấp", value: "price_desc" },
+];
+
 export const filtersConfig = {
   category: {
     title: "Danh mục sản phẩm",

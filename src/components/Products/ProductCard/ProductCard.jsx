@@ -1,5 +1,5 @@
 import React from "react";
-import { assets } from "../../assets";
+import { assets } from "../../../assets/index";
 
 export const ProductCard = ({ product }) => {
   
@@ -44,7 +44,7 @@ export const ProductCard = ({ product }) => {
         </div>
 
         {/* Nút mua ngay */}
-        <button className="mt-4 rounded-md bg-[#E6F1FF] px-3 py-3 w-full text-[#025FCA] font-semibold hover:bg-blue-200 transition-colors">
+        <button className="mt-4 rounded-md bg-[#E6F1FF] px-3 py-3 w-full text-[#025FCA] font-semibold hover:bg-blue-200 cursor-pointer transition-colors">
           Mua ngay
         </button>
       </div>

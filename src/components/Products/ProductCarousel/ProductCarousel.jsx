@@ -3,7 +3,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useEffect, useRef } from "react";
-import { assets, products } from "../../assets";
+import { assets, products } from "../../../assets";
 import {ProductCard} from "../ProductCard/ProductCard";
 
 export default function ProductCarousel() {
